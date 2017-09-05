@@ -18,7 +18,7 @@
 <body>
 <!-- navbar and header -->
 <header>
-<nav class="nav nav-pills nav-justified fixed-top">
+<nav class="nav nav-pills nav-justified fixed-top" id="start">
   <a class="nav-item nav-link" href="#wraper" style="color:red">Active</a>
   <a class="nav-item nav-link" href="#blog">Blog</a>
   <a class="nav-item nav-link" href="#welcome">Welcome</a>
@@ -349,8 +349,7 @@
 <script type="text/javascript">
 	$(document).ready(function(){
   $('.carousel').slick({
-  	slidesToShow: 3,
-  	slidesToScroll: 1,
+  	
     autoplay: true,
     arrows: false,
     // dots:true,
@@ -362,15 +361,25 @@
     slidesToScroll: 1
   });
 });
-	// smooth scroll
-	 // $('header li a, .container a i, footer a i').on('click', function (e) {
-  //      var hash = $(this).data('value');
-  //       e.preventDefault();
-  //      var place = $(hash).offset().top;
-  //       $('body, html').animate({
-  //           scrollTop: place
-  //       }, 1000)
-  //   });
+	
+	 $('#wrapper .down').on('click', function (e) {
+       var hash = $(this).data('value');
+        e.preventDefault();
+       var place = $(hash).offset().top;
+        $('body, html').animate({
+            scrollTop: place
+        }, 1000)
+    });
+  // $('#wrapper .down').on('click', function (e){
+  // 	e.preventDefault();
+  // 	var hash=this.hash;
+  // 	var postion = $(hash).offset.top;
+  // 	$('html').animate({
+  // 		scrollTop:postion
+
+  // 	},800);
+  // });
+
     
 </script>
 </body>
