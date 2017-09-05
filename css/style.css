@@ -38,10 +38,11 @@ h1.display-3{
 	text-align: center;
 	font-weight: bold;
 }
-a.down{
+.container i.fa{
 	/*position: absolute;
 	top: 100px;*/
 	color:#B22222;
+	/*color:yellow;*/
 	cursor: pointer;
 }
 /*2nd part welcome*/
@@ -97,6 +98,9 @@ li a {
 	font-size: 18px;
 	color: white;
 	text-align: center;
+}
+#foot i.fa.not{
+	color:yellow;
 }
 /*happy clints*/
 .clints{
