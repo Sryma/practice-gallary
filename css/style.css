@@ -1,0 +1,125 @@
+body,html{
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+	font-family: "helvatica";
+
+}
+/*header*/
+.fixed-top{
+	background-color: #4d4d4d;
+}
+nav a{
+	color: white;
+}
+/*jumbotron*/
+.picture{
+	background: url(../image/pexels-photo-102127.jpeg)  center center no-repeat;
+	background-size: cover;
+
+	margin-top:3%;
+	position: relative;
+}
+.overlay{
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+h1.display-3{
+	color:white;
+	text-align: center;
+	font-size: 5em;
+	font-weight: bold;
+}
+.project{
+	text-align: center;
+	font-weight: bold;
+}
+#color{
+	background: blue;
+}
+.end{
+	background: #e6e6e6;
+}
+.right{
+	background: #ffffcc;
+}
+
+/*font awesome*/
+
+.red{
+	text-align: justify;
+	color: yellow;
+}
+.project h2{
+	font-size: 36px;
+}
+.project a i {
+	color: green;
+}
+.project p{
+	color: blue;
+}
+.project a.active i{
+	color: red;
+}
+.project a.act i{
+	color: yellow;
+}
+footer{
+	background-color: #4d4d4d;
+	/*height: 200px;*/
+}
+ ul{
+	list-style: none;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	/*margin-top: 10px;*/
+}
+li{
+	padding: 10px ;
+}
+li a {
+	color: white;
+}
+.full h2{
+	font-size: 18px;
+	color: white;
+	text-align: center;
+}
+@media only screen and (max-width: 480px){
+	body{
+		font-size: 18px;
+	}
+	h1.display-3{
+		font-size: 1em;
+		color:red;
+	}
+	.project p,.right p,.end p{
+		font-size: 0.75em;
+		color:orange;
+	}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	body{
+		font-size: 20px;
+	}
+	h1.display-3{
+		font-size: 1.8em;
+		color:blue;
+	}
+	.project h2{
+		font-size: 1.6em;
+	}
+	.project p,.right p,.end p{
+		font-size: 0.85em;
+		color:maroon;
+	}
+	li a {
+	color: pink;
+}
+}
