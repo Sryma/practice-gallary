@@ -17,7 +17,7 @@ nav a{
 	background: url(../image/pexels-photo-102127.jpeg)  center center no-repeat;
 	background-size: cover;
 
-	margin-top:3%;
+	margin-top:3.5%;
 	position: relative;
 }
 .overlay{
@@ -60,7 +60,7 @@ h1.display-3{
 
 .red{
 	text-align: justify;
-	color: yellow;
+	color: black;
 }
 .project h2{
 	font-size: 36px;
@@ -68,9 +68,9 @@ h1.display-3{
 .project a i {
 	color: green;
 }
-.project p{
+/*.project p{
 	color: blue;
-}
+}*/
 .project a.active i{
 	color: red;
 }
