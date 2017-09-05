@@ -42,7 +42,7 @@ h1.display-3{
 	background: blue;
 }
 .end{
-	background: #e6e6e6;
+	background: url(../image/dandelion-clock-brown-vase-92525344.jpg);
 }
 .right{
 	background: #ffffcc;
@@ -91,6 +91,16 @@ li a {
 	color: white;
 	text-align: center;
 }
+
+/* slick */
+
+.maroon{
+	color: #f49242;
+}
+.pink{
+	color:#42f4b9;
+}
+/*end of slick*/
 @media only screen and (max-width: 480px){
 	body{
 		font-size: 18px;
