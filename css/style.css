@@ -101,9 +101,9 @@ footer{
 /*li{
 	padding: 10px ;
 }*/
-li a {
+/*li a {
 	color: white;
-}
+}*/
 .full h2{
 	font-size: 18px;
 	color: white;
@@ -111,6 +111,14 @@ li a {
 }
 #foot i.fa.not{
 	color:yellow;
+	text-align: center;
+}
+#foot i.fa{
+	padding-right: 20px;
+	color: orange;
+}
+.go{
+	color: red;
 }
 /*happy clints*/
 .clints{
