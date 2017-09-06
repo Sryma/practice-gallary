@@ -1,3 +1,6 @@
+*{
+	box-sizing: border-box;
+}
 body,html{
 	font-size: 18px;
 	margin: 0;
@@ -16,7 +19,6 @@ nav a{
 .picture{
 	background: url(../image/pexels-photo-102127.jpeg)  center center no-repeat;
 	background-size: cover;
-
 	margin-top:3.5%;
 	position: relative;
 }
@@ -50,7 +52,8 @@ h1.display-3{
 	background: blue;
 }
 .end{
-	background: url(../image/dandelion-clock-brown-vase-92525344.jpg);
+	background: url(../image/dandelion-clock-brown-vase-92525344.jpg) center center no-repeat;
+	background-size: cover;
 }
 .right{
 	background: #ffffcc;
@@ -123,15 +126,36 @@ li a {
 /*end of slick*/
 @media only screen and (max-width: 480px){
 	body{
-		font-size: 18px;
+		font-size: 16px;
+	}
+	#start a{
+		font-size: .85em;
+		color:pink;
+	}
+	#start{
+		width: 480px;
 	}
 	h1.display-3{
-		font-size: 1em;
+		font-size: 1.5em;
 		color:red;
+	}
+	.project h2{
+		font-size: 1.2em;
 	}
 	.project p,.right p,.end p{
 		font-size: 0.75em;
 		color:orange;
+	}
+	/*gallary*/
+	.gal h1{
+		font-size: 1.2em;
+	}
+	.gal h3{
+		font-size: 1em;
+	}
+	.gal p{
+		font-size: 0.8em;
+		color: maroon;
 	}
 }
 @media only screen and (min-width: 481px) and (max-width: 768px){
