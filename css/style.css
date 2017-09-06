@@ -9,12 +9,19 @@ body,html{
 
 }
 /*header*/
-.fixed-top{
-	background-color: #4d4d4d;
+.navbar{
+	background-color: #4d4d4d!important;
+	/*padding-bottom: 40px;*/
 }
-nav a{
-	color: white;
+/* padding-bottom so it finds more space as navbar plays an important rules to change the color and content everything*/
+a.col{
+	color: white!important;
+
+	/*padding: 0px;*/
 }
+li.nav-item{
+	padding-right: 1%;
+} 
 /*jumbotron*/
 .picture{
 	background: url(../image/pexels-photo-102127.jpeg)  center center no-repeat;
@@ -91,9 +98,9 @@ footer{
 	justify-content: center;
 	/*margin-top: 10px;*/
 }
-li{
+/*li{
 	padding: 10px ;
-}
+}*/
 li a {
 	color: white;
 }
@@ -128,19 +135,23 @@ li a {
 	body{
 		font-size: 16px;
 	}
-	#start a{
-		font-size: .85em;
-		color:pink;
+	.picture{
+		margin-top: 12%;}
+	a.col{
+		font-size: .85em!important;
+		color:pink!important;
+
 	}
 	#start{
-		width: 480px;
+		width: 100%;
 	}
 	h1.display-3{
-		font-size: 1.5em;
-		color:red;
+		font-size: 2em;
+		color:purple;
 	}
 	.project h2{
 		font-size: 1.2em;
+
 	}
 	.project p,.right p,.end p{
 		font-size: 0.75em;
@@ -163,7 +174,7 @@ li a {
 		font-size: 20px;
 	}
 	h1.display-3{
-		font-size: 1.8em;
+		font-size: 2.5em;
 		color:blue;
 	}
 	.project h2{
@@ -173,7 +184,14 @@ li a {
 		font-size: 0.85em;
 		color:maroon;
 	}
-	li a {
-	color: pink;
+	a.col{
+		font-size: 1em!important;
+		color:yellow!important;
+
+		
+	}
+	.navbar{
+	background-color: orange!important;
+	padding-bottom: 40px;
 }
 }
