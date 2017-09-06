@@ -124,11 +124,16 @@ footer{
 .clints{
 	background-color: #4d4d4d;
 	opacity: 0.8;
+	padding: 2%;
 
 }
 .white{
 	font-size: 1.5em;
 	color:white;
+}
+.gal h1{
+	border-bottom: 1px solid white;
+	margin-bottom: 3%;
 }
 /* slick */
 
