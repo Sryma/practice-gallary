@@ -12,28 +12,14 @@
 	<!-- bootstrap 4 beta -->
 	<!-- bootstrap 4 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<!-- style.css -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
 	<!-- slick.css -->
 <link rel="stylesheet" type="text/css" href="css/slick.css">
-
+<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<!-- navbar and header -->
-<!-- <header id="start">
-<nav class="nav nav-pills nav-justified fixed-top" >
-<div class="collapse navbar-collapse">
-</div>
-  <a class="nav-item nav-link" href="#wraper" style="color:red">Active</a>
-  <a class="nav-item nav-link" href="#blog">Blog</a>
-  <a class="nav-item nav-link" href="#welcome">Welcome</a>
-  <a class="nav-item nav-link " href="#slick">Gallary</a>
-  <a class="nav-item nav-link " href="#success">Success</a>
-  <a class="nav-item nav-link " href="#foot">Contact Us</a> 
- 
-</nav>
-</header> -->
-<!-- copy -->
+
 <header id=start>
 <nav class="navbar navbar-expand-lg navbar-light bg-light navbar fixed-top">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,11 +62,14 @@
 	<div class="overlay">
 		
 	</div>
-  <div class="container">
+  <!-- <div class="container"> -->
     <h1 class="display-3">Art <span class="maroon">gallary</span></h1>
     <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
-    <a href="#"><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a>
-  </div>
+    <div id="scroll_1" class="wow pulse" data-wow-duration="2s" data-wow-delay="0.5s" data-wow-iteration="100">
+		<a class="nav-top" href="#scroll_1"><i class="fa fa-caret-square-o-down fa-3x change" aria-hidden="true"></i></a>
+	</div>
+    <!-- <a href="#"><i class="fa fa-angle-down fa-4x" aria-hidden="true"></i></a> -->
+  <!-- </div> -->
 </div>
 </section>
 <section id="blog">
@@ -360,7 +349,11 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12 complete text-center">
-					<a href="#" ><i class="fa fa-angle-up fa-4x not" aria-hidden="true"></i></a>
+				<div id="scope">
+					<a class= "nav-bottom" href="#scope" ><i class="fa fa-angle-up fa-4x not" aria-hidden="true"></i></a>
+				</div>
+				</div>
+				<div class="col-md-12 complete text-center">
 					<ul>
 						<li><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true" style="color:pink;"></i></a></li>
 						<li><a href="#"><i class="fa fa-linkedin fa-2x" aria-hidden="true" style="color:lightblue"></i></a></li>
@@ -414,47 +407,51 @@
   });
 });
 
-	$('#start a').on('click',function(e){
-		e.preventDefault();
-		var hash =this.hash;
-		var position =$(hash).offset().top;
-		$('body','html').animate({
-			scrollTop : position
-
-		},800);
-	})
-	// $('#foot i.fa').on('click',function(e){
-	// 	e.preventDefault();
-	// 	var hash =this.hash;
-	// 	var position =$(hash).offset().top;
-	// 	$('body','html').animate({
-	// 		scrollTop : position
-
-	// 	},800);
-
-	// 	// $('html','body').animate({scrollTop:$(document).height()},1000);
-	// 	// return false;
-
-	// })
-	//  // $('#wrapper .down').on('click', function (e) {
-  //      var hash = $(this).data('value');
-  //       e.preventDefault();
-  //      var place = $(hash).offset().top;
-  //       $('body, html').animate({
-  //           scrollTop: place
-  //       }, 1000)
-  //   });
-  // // $('#wrapper .down').on('click', function (e){
-  // 	e.preventDefault();
-  // 	var hash=this.hash;
-  // 	var postion = $(hash).offset.top;
-  // 	$('html').animate({
-  // 		scrollTop:postion
-
-  // 	},800);
-  // });
-
+	
     
+</script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+	$(".nav-link").click(function(e) {
+		e.preventDefault();
+		var section = $(this).attr('href');
+		console.log(section);
+	    $('html, body').animate({
+	        scrollTop: $(section).offset().top
+	    }, 500);
+	});
+</script>
+<script type="text/javascript">
+$(".nav-top").click(function(e) {
+
+		e.preventDefault();
+
+		var section = $(this).attr('href');
+
+
+		console.log(section);
+
+	    $('html, body').animate({
+	        scrollTop: 1000
+	    }, 100);
+
+	});
+</script>
+<script type="text/javascript">
+$(".nav-bottom").click(function(e) {
+
+		e.preventDefault();
+
+		var section = $(this).attr('href');
+
+
+		console.log(section);
+
+	    $('html, body').animate({
+	        scrollTop: 600
+	    }, 100);
+
+	});
 </script>
 </body>
 </html>
